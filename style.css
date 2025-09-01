@@ -68,8 +68,8 @@ body {
 }
 
 .logo {
-    margin-left: 30px;
-    font-size: 30px;
+    margin-left: 40px;
+    font-size: 35px;
     color: white;
 }
 
@@ -77,28 +77,32 @@ body {
     margin-right: 30px;
     padding: 15px;
 }
-
 .links {
     display: flex;
     list-style-type: none;
 }
-
 .links li {
-    padding: 15px;
+    padding: 15px ;
 
 }
-
 .links a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
-
+.links .login{
+   background-color: rgb(20, 236, 5);
+   border: none;
+   /* padding: 5px; */
+   color: rgb(235, 233, 233);
+   font-size: 18px;
+   width: 120px;
+   /* border-radius: 10px; */
+}
 .links a:hover {
     color: #ff679d;
     transition: 0.3s;
 }
-
 .details {
     display: inline;
 }
