@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    background-image: url("./images/banner-03.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.details {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    text-transform: uppercase;
+}
+
+.details h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.details h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.btn {
+    width: 250px;
+    display: flex;
+    gap: 5px;
+}
+
+.btn :first-child {
+    background-color: white;
+    text-decoration: none;
+    color: #ff679d;
+    width: 80px;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.btn :last-child{
+    background-color: #11a6fc;
+    text-decoration: none;
+    color: white;
+    width: 80px;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.lists {
+    margin-right: 30px;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+}
+
+.links li {
+    padding: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.links a:hover{
+    color: #ff679d;
+    transition: 0.3s;
+}
+.details {
+    display: inline;
+}
