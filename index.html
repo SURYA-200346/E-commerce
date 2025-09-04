@@ -8,7 +8,8 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Footwear</title>
+    <link rel="shortcut icon" href="./images/tab-icon.png" type="image/x-icon">
+    <title>Bootie</title>
 </head>
 
 <body>
@@ -18,15 +19,18 @@
                 <h2>Bootie</h2>
             </div>
             <div class="lists">
-                <Ul class="links">
+                <ul class="links">
                     <li> <a href="#" class="active">Home</a></li>
                     <li> <a href="#">Mens</a></li>
                     <li> <a href="#">Womens</a></li>
                     <li> <a href="#">Kids</a></li>
                     <li> <a href="#">Contact</a></li>
                     <li> <a href="#">About</a></li>
-                    <button class="login" id="Login-btn">Login</button>
-                </Ul>
+                </ul>
+            </div>
+            <div class="btn01">
+                <button class="loginbtn" id="Loginbtn">Login</button>
+                <button class="loginbtn" id="signbtn">Sign Up</button>
             </div>
         </nav>
         <div class="banner">
@@ -39,19 +43,25 @@
                 </div>
             </div>
         </div>
-        <div class="login-container">
-            <div class="logincontent">
+        <div class="login-container" style="display: none;" >
+            <div class="logincontent" >
                 <div class="login-img">
-                    
+
                 </div>
-                <form action="#">
-                    <h1>Login </h1>
+                <form action="#" id="loginform">
+                    <div class="heading">
+                        <h1>Login </h1>
+                        <span id="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
+                    </div>
                     <label for="username">Username:</label>
                     <input type="text" name="username" id="username">
                     <label for="username">Password:</label>
-                    <input type="text" name="username" id="username">
-                    <button>LOGIN</button>
+                    <input type="password" name="password" id="password">
+                    <button id="login">LOGIN</button>
+                    <div><p id="success"></p></div>
+                <div><p id="failed"></p></div>
                 </form>
+                
             </div>
         </div>
     </header>
@@ -106,8 +116,10 @@
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -125,8 +137,10 @@
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -144,8 +158,10 @@
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -163,8 +179,10 @@
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -182,8 +200,10 @@
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-star fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-star-half-stroke fa-xs" style="color: #a2a1a5;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -265,7 +285,9 @@
             </div>
         </div>
     </section>
-    <script src="index.js"></script>
+    <script src="index.js">
+        
+    </script>
 </body>
 
 </html>
