@@ -19,6 +19,7 @@ body {
     background-position: center;
     position: relative;
 }
+
 .details {
     width: 700px;
     position: absolute;
@@ -91,7 +92,7 @@ h2 {
 .logo {
     margin-left: 100px;
     font-size: 40px;
-    color: black
+    color: white;
 }
 
 .lists {
@@ -103,51 +104,138 @@ h2 {
     list-style-type: none;
     margin-top: 35px;
 }
+
 .links li {
     margin-top: 12px;
     padding: 15px;
 }
+
 .links a {
     text-decoration: none;
-    color: rgb(7, 7, 7);
+    color: white;
     font-size: 24px;
     text-transform: capitalize;
 }
-.btn01{
+
+.btn01 {
     height: 50px;
     margin-top: 70px;
 }
+
 .btn01 .loginbtn {
     /* padding: 10px; */
     background-color: #11a6fc;
     border-radius: 2px;
     padding: 8px;
-    margin:5px;
+    margin: 5px;
     border: none;
     color: white;
     font-size: 18px;
     width: 120px;
     cursor: pointer;
 }
+
 .links a:hover {
     color: #0c0ce7;
     transition: 0.3s;
 }
+
+/* signup page style */
+.signupimg{
+   background-image: url("./images/signup-img.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 300px;
+    height: 450px;
+}
+
+.signup {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 95vh;
+
+}
+
+.signupcontent {
+    margin: 200px auto;
+    width: 600px;
+    height: 450px;
+    display: flex;
+}
+
+.signupcontent form {
+    width: 350px;
+    height: 450px;
+    background-color: #8c898a8b;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.signupcontent label {
+    display: block;
+    color: white;
+    padding: 5px;
+    margin: 0 50px;
+    font-size: 20px;
+}
+
+.signupcontent input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    margin: 10px 50px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.signupcontent input:focus {
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.signupcontent form h1 {
+    text-align: center;
+}
+
+.signupcontent .heading span {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#signupbtn {
+    padding: 8px;
+    margin: 20px 0 0 50px;
+    width: 220px;
+    background-color: #11a6fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* login page style */
 
 .login-container {
     position: absolute;
     top: 0;
     width: 100%;
     height: 95vh;
-    /* background-color: rgba(179, 184, 184, 0.292); */
-
 }
+
 .logincontent {
-    margin: 250px auto;
+    margin: 200px auto;
     width: 600px;
     height: 450px;
     display: flex;
 }
+
 .logincontent form {
     width: 350px;
     height: 450px;
@@ -155,6 +243,7 @@ h2 {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 .login-img {
     background-image: url("./images/banner-01.jpg");
     background-position: center;
@@ -164,12 +253,15 @@ h2 {
     width: 300px;
     height: 450px;
 }
+
 .logincontent form h1 {
     text-align: center;
 }
+
 .heading {
     position: relative;
 }
+
 .logincontent .heading span {
     color: white;
     position: absolute;
@@ -191,10 +283,14 @@ h2 {
     padding: 8px;
     border: none;
     margin: 10px 50px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .logincontent input:focus {
-    box-shadow: 1px 1px 15px 8px #11a6fcb2;
+    outline: none;
+    color: white;
+    font-size: 14px;
 }
 
 .logincontent button {
@@ -208,21 +304,19 @@ h2 {
     background-color: #11a6fc;
 }
 
+
 /* offer Section */
 .offers {
     width: 100%;
     height: 15em;
     /* display: flex; */
     /* justify-content: space-evenly; */
-
 }
-
 .container {
     display: flex;
     justify-content: space-evenly;
     gap: 15px
 }
-
 .container .items {
     display: flex;
     justify-content: space-evenly;
@@ -232,24 +326,21 @@ h2 {
     background-color: #f8f9fa;
     box-shadow: 2px 10px 25px 2px rgba(140, 147, 152, 0.623);
 }
-
 .items i {
     margin-top: 15%;
 }
-
 .items .content {
     margin-top: 10px;
     width: 200px;
 }
-
 .content h4:last-child {
     color: rgb(140, 147, 152)
 }
 
+
 /* new-arrival */
 
 #new-arrival {
-    /* background-color: #11a6fc; */
     width: 100%;
     height: auto;
     display: flex;
