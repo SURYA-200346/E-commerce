@@ -22,7 +22,7 @@
             <div class="lists">
                 <ul class="links">
                     <li> <a href="#" class="active">Home</a></li>
-                    <li> <a href="#">Mens</a></li>
+                    <li> <a href="mens.html">Mens</a></li>
                     <li> <a href="#">Womens</a></li>
                     <li> <a href="#">Kids</a></li>
                     <li> <a href="#">Contact</a></li>
@@ -32,7 +32,11 @@
             <div class="btn01">
                 <button class="loginbtn" id="Loginbtn">Login</button>
                 <button class="loginbtn" id="signbtn">Sign Up</button>
+                <a style="cursor: pointer;">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i>
+                </a>
             </div>
+
         </nav>
         <div class="banner">
             <div class="details">
@@ -55,9 +59,9 @@
                         <span id="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
                     </div>
                     <label for="username">Username:</label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" required>
                     <label for="username">Password:</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                     <button id="login">LOGIN</button>
                     <div>
                         <p id="success"></p>
@@ -77,14 +81,14 @@
                 <form action="#" id="signup">
                     <div class="heading">
                         <h1>Sign Up </h1>
-                        <span id="close"><i class="fa-solid fa-xmark" style="color: #090909;"></i></span>
+                        <span id="closebtn"><i class="fa-solid fa-xmark" style="color: #090909;"></i></span>
                     </div>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                     <label for="email">Email:</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" required>
                     <label for="newpassword">Create Password:</label>
-                    <input type="password" name="newpassword" id="newpassword">
+                    <input type="password" name="newpassword" id="newpassword" required>
                     <button id="signupbtn">SignUp</button>
                 </form>
             </div>

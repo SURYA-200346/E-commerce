@@ -14,10 +14,10 @@ close.addEventListener("click", () => {
     logincontainer.style.display = "none";
 
 })
-// close.addEventListener("click", () => {
-//     signupcontainer.style.display="none";
+closebtn.addEventListener("click", () => {
+    signupcontainer.style.display = "none";
 
-// })
+})
 window.addEventListener("click", (close) => {
     if (close.target === logincontainer) {
         logincontainer.style.display = "none";
@@ -38,6 +38,7 @@ signbtn.addEventListener("click", () => {
     signupcontainer.style.display = "block"
 })
 
+// login page logic
 document.getElementById("login").addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -59,15 +60,16 @@ document.getElementById("login").addEventListener("click", (event) => {
                 u => (u.username === username || u.name === username) && (u.newpassword === password || u.newpassword === password)
             );
             if (user) {
-                document.getElementById("success").innerText = "Login successful!";
-                document.getElementById("success").style.display="none"
-                document.getElementById("failed").textContent = "";
-                logincontainer.style.display = "none";
+                // document.getElementById("success").innerText = "Login successful!";
+                // document.getElementById("success").style.display = "none";
+                // document.getElementById("failed").textContent = "";
                 alert("Login Successfull")
+                logincontainer.style.display = "none";
             } else {
                 document.getElementById("failed").textContent = "Invalid username or password.";
+                document.getElementById("failed").style.display = "none"
                 document.getElementById("success").textContent = "";
-                logincontainer.style.display = "none";
+                // logincontainer.style.display = "none";
                 alert("Invalid username or password.")
             }
             document.getElementById("loginform").reset();
@@ -79,6 +81,7 @@ document.getElementById("login").addEventListener("click", (event) => {
         });
 });
 
+// Sign up page
 
 
 document.getElementById("signupbtn").addEventListener("click", (event) => {
@@ -103,10 +106,13 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
         })
         .then(data => {
             alert("Signup successful!");
+            signup.reset();
+            signupcontainer.style.display = "none";
+
         })
         .catch(error => {
             console.log("Signup to Create", error);
-
         })
-    signup.reset();
+
 })
+
