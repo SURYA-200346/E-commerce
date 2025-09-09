@@ -82,8 +82,6 @@ document.getElementById("login").addEventListener("click", (event) => {
 });
 
 // Sign up page
-
-
 document.getElementById("signupbtn").addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -96,7 +94,6 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ name, email, newpassword }),
-
     })
         .then(res => {
             if (res.ok) {
@@ -105,6 +102,7 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
             throw new Error("Failed to create task.");
         })
         .then(data => {
+            
             alert("Signup successful!");
             signup.reset();
             signupcontainer.style.display = "none";

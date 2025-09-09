@@ -8,6 +8,25 @@ body {
     height: 500px;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.header::before {
+    position: absolute;
+    content: "";
+    background-color: #057aefbb;
+    opacity: 0.8;
+    width: 100%;
+    height: 500px;
+}
+
+.mens {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: white;
+    font-size: 25px;
 }
 
 .navbar {
@@ -56,24 +75,27 @@ h2 {
     }
 }
 
+
 .details h4 {
-    color: white;
-    font-weight: 100;
-    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f2f2f2;
+    margin-bottom: 0.5rem;
 }
 
 .details h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
     color: white;
-    font-size: 45px;
-    margin: 5px 0;
-    font-family: "Source Sans Pro", sans-serif;
 }
 
-.btn {
-    width: 250px;
+.details .btn {
     display: flex;
-    gap: 5px;
-    margin: 10px 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
 .btn :first-child {
@@ -128,13 +150,15 @@ h2 {
     height: 50px;
     margin-top: 70px;
 }
-.btn01 i{
+
+.btn01 i {
     margin-left: 20px;
 }
+
 .btn01 .loginbtn {
     /* padding: 10px; */
     background-color: #11a6fc;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 8px;
     margin: 5px;
     border: none;
@@ -144,10 +168,6 @@ h2 {
     cursor: pointer;
 }
 
-.links a:hover {
-    color: #0c0ce7;
-    transition: 0.3s;
-}
 
 /* signup page style */
 .signupimg {
@@ -165,7 +185,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 95vh;
-
+    background-color: #f5bb789b;
 }
 
 .signupcontent {
@@ -236,6 +256,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 95vh;
+    background-color: #f5bb789b;
 }
 
 .logincontent {
@@ -292,7 +313,8 @@ h2 {
     padding: 8px;
     border: none;
     margin: 10px 50px;
-    background-color: transparent;
+    background: transparent;
+    font-size: 16px;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -304,7 +326,7 @@ h2 {
 .logincontent input:focus {
     outline: none;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .logincontent button {
@@ -389,6 +411,8 @@ h2 {
     box-sizing: border-box;
     border: 1px solid gainsboro;
     background-color: white;
+    box-shadow: 2px 2px 20px 3px rgba(144, 141, 141, 0.388);
+
 }
 
 .shoes .names {
