@@ -390,7 +390,7 @@ h2 {
 
 .container-02 {
     width: 70%;
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -474,11 +474,11 @@ h2 {
 
 }
 
-.shoes .img {
+/* .shoes .img {
     position: relative;
-}
+} */
 
-.shoes .img:hover::after {
+/* .shoes .img:hover::after {
     content: "";
     display: block;
     width: 100%;
@@ -491,4 +491,74 @@ h2 {
     cursor: pointer;
     transform: scale(0.9);
     transition-duration: 0.8s;
+} */
+.shoes:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.4s;
+}
+
+/* popular-product */
+.popular-product {
+    min-width: 100%;
+    height: 100vh;
+    /* background-color: #ff679d; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.product-container {
+    min-width: 70%;
+    height: 600px;
+    margin-top: 20px;
+    /* background-color: #11a6fc;  */
+}
+
+.product-container .productheading {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 35% 45%;
+    grid-template-rows: 200px 250px 200px;
+}
+
+.productimg {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.productimg .img01 {
+    background-image: url(./images/product-img01.jpg);
+    background-size: cover;
+    width: 440px;
+    height: 565px;
+    
+}
+.productimg02{
+    grid-row: 1;
+    
+}
+.productimg02 .img02 {
+    background-image: url(./images/product-img02.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 200px;
+   
+}
+
+.productimg03 .img03 {
+    background-image: url(./images/product-img03.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 230px;
 }

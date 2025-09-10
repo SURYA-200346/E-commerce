@@ -82,6 +82,7 @@ document.getElementById("login").addEventListener("click", (event) => {
 });
 
 // Sign up page
+
 document.getElementById("signupbtn").addEventListener("click", (event) => {
     event.preventDefault();
 
