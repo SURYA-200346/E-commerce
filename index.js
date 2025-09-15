@@ -103,7 +103,7 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
             throw new Error("Failed to create task.");
         })
         .then(data => {
-            
+
             alert("Signup successful!");
             signup.reset();
             signupcontainer.style.display = "none";
@@ -115,3 +115,8 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
 
 })
 
+document.querySelectorAll('.product-link').forEach(link => {
+    link.addEventListener('click', function () {
+        localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
+    });
+});
