@@ -13,13 +13,13 @@ window.addEventListener("DOMContentLoaded", function () {
                 item.id === selectedId || 
                 item.name.toLowerCase().replace(/\s+/g, '-') === selectedId
             );
-            const cardcontainer = document.getElementById("productdetails");
+            const cardcontainer = document.getElementById("cardimage");
             cardcontainer.innerHTML = "";
             if (product) {
                 cardcontainer.innerHTML = `
                     <div class="productshow" id="displayproduct">
                         <img src="${product.image}" alt="${product.name}" />
-                        
+                       
                     </div>
                 `;
             } else {
