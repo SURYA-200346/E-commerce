@@ -14,7 +14,7 @@ body {
 .header::before {
     position: absolute;
     content: "";
-    background-color: #057aefbb;
+    background-color: #50a1f2bb;
     opacity: 0.8;
     width: 100%;
     height: 500px;
@@ -498,10 +498,18 @@ h2 {
     /* background-color: #ff6674; */
 }
 .product-info .productshow{
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 362px;
     border: 1px solid black;
     /* background-color:aqua; */
     margin: 0 10px;
+}
+.product-link{
+    width: 300px;
+    height: 400px;
+}
+.product-info img{
+    width: 320px;
+    height: 339px;
 }
 /* search box */

@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
     })
         .then(res => res.json())
         .then(data => {
-            // Find the product by id (adjust property as needed)
+           
             const product = data.find(item => 
                 item.id === selectedId || 
                 item.name.toLowerCase().replace(/\s+/g, '-') === selectedId
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
                 cardcontainer.innerHTML = `
                     <div class="productshow" id="displayproduct">
                         <img src="${product.image}" alt="${product.name}" />
-                        <h2>${product.name}</h2>
+                        
                     </div>
                 `;
             } else {
