@@ -490,16 +490,17 @@ h2 {
 .display-prod .search{
     width: 350px;
     height: 65vh;
-    background-color: #11a6fc;
+    /* background-color: #11a6fc; */
 }
 .display-prod .product-info{
     width: 55%;
     height: 100vh;
-    background-color: #ff6674;
+    /* background-color: #ff6674; */
 }
 .product-info .productshow{
-    width: 250px;
+    width: 300px;
     height: 400px;
+    border: 1px solid black;
     /* background-color:aqua; */
     margin: 0 10px;
 }
