@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-    background-image: url("./images/banner-02.jpg");
+    background-image: url("./images/productimg-01.jpg");
     height: 500px;
     background-position: center;
     background-size: cover;
@@ -14,8 +14,8 @@ body {
 .header::before {
     position: absolute;
     content: "";
-    background-color: #50a1f2bb;
-    opacity: 0.8;
+    background-color: #50a1f2aa;
+    /* opacity: 0.8; */
     width: 100%;
     height: 500px;
 }
@@ -488,16 +488,20 @@ h2 {
     height: 100dvh;
     display: flex;
     justify-content: center;
+    /* background-color: #11a6fc; */
 }
 
 .display-prod .search {
     width: 350px;
     height: 65vh;
+    margin-top: 50px;
     /* background-color: #11a6fc; */
 }
-.searchbox{
+
+.searchbox {
     font-size: 22px;
 }
+
 .searchbox input {
     padding: 15px;
     width: 320px;
@@ -516,15 +520,18 @@ h2 {
 }
 
 .display-prod .product-info {
-    width: 40%;
+    min-width: 55%;
+    width: 60%;
     height: 100vh;
+    margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     /* background-color: #ff6674; */
 }
 
 .product-info .productshow {
-    width: 380px;
-    height: 400px;
+    width: 320px;
+    height: 340px;
     border: 1px solid #bbb9b9;
     /* background-color:aqua; */
     margin: 0 10px;
@@ -540,4 +547,53 @@ h2 {
     height: 339px;
 }
 
+.product-info .information {
+    margin: 0 0 0 20px;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.information :first-child {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.information :nth-child(3) {
+    padding: 0;
+}
+
+.information .discripitions :first-child {
+    font-size: 18px;
+    color: #606782;
+    text-transform: uppercase;
+}
+
+.information .discripitions :nth-child(2) {
+    font-size: 20px;
+    line-height: 2rem;
+    color: #959499;
+}
+
+.formemail input {
+    width: 320px;
+    padding: 14px;
+    background: #efeeee;
+    border: none;
+}
+
+.formemail input::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+}
+
+.para {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
 /* search box */
