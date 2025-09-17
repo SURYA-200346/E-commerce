@@ -259,8 +259,8 @@ h2 {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 95vh;
-    background-color: #f5bb789b;
+    height: 100vh;
+    /* background-color: #f5bb789b; */
 }
 
 .logincontent {
@@ -291,6 +291,7 @@ h2 {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 .logincontent form h1 {
     text-align: center;
 }
@@ -516,12 +517,14 @@ h2 {
     list-style: none;
     padding: 5px;
     font-size: 20px;
+    color: #8e8e8e;
 }
 
 .dislist li {
     list-style: none;
     padding: 5px;
     font-size: 20px;
+    color: #8e8e8e;
 }
 
 .display-prod .product-info {
@@ -580,10 +583,25 @@ h2 {
 }
 
 .formemail input {
-    width: 320px;
+    width: 300px;
     padding: 14px;
     background: #efeeee;
     border: none;
+}
+
+.formemail form {
+    position: relative;
+}
+
+.formemail form button {
+    position: absolute;
+    right: 75px;
+    top: 20px;
+    padding: 15px;
+    width: 100px;
+    text-transform: uppercase;
+    background: #1e272e;
+    color: #e2352f;
 }
 
 .formemail input::placeholder {
