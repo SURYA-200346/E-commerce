@@ -14,7 +14,7 @@ body {
 .header::before {
     position: absolute;
     content: "";
-    background-color: #50a1f2aa;
+    /* background-color: #50a1f2aa; */
     /* opacity: 0.8; */
     width: 100%;
     height: 500px;
@@ -171,15 +171,7 @@ h2 {
 
 
 /* signup page style */
-.signupimg {
-    background-image: url("./images/signup-img.jpg");
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 300px;
-    height: 450px;
-}
+
 
 .signup {
     position: absolute;
@@ -191,17 +183,27 @@ h2 {
 
 .signupcontent {
     margin: 200px auto;
-    width: 600px;
+    background-image: url("./images/signup-img.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 400px;
     height: 450px;
     display: flex;
+    /* justify-content: center; */
+}
+
+.signupcontent::before {
+    content: "";
+    position: absolute;
+    background-color: #696c6ca9;
+    width: 400px;
+    height: 450px;
 }
 
 .signupcontent form {
-    width: 350px;
+    width: 400px;
     height: 450px;
-    background-color: #8c898a8b;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    position: relative;
 }
 
 .signupcontent label {
@@ -213,7 +215,7 @@ h2 {
 }
 
 .signupcontent input {
-    width: 200px;
+    width: 300px;
     padding: 8px;
     border: none;
     margin: 10px 50px;
@@ -241,8 +243,8 @@ h2 {
 
 #signupbtn {
     padding: 8px;
-    margin: 20px 0 0 50px;
-    width: 220px;
+    margin: 40px 0 0 50px;
+    width: 320px;
     background-color: #11a6fc;
     color: white;
     border: none;
@@ -262,30 +264,33 @@ h2 {
 }
 
 .logincontent {
+    background-image: url(images/banner-01.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
     margin: 200px auto;
-    width: 600px;
+    width: 400px;
     height: 450px;
     display: flex;
+    justify-content: center;
+}
+
+.logincontent::before {
+    content: "";
+    position: absolute;
+    background-color: #696c6ca9;
+    width: 400px;
+    height: 450px;
 }
 
 .logincontent form {
+    position: relative;
     width: 350px;
     height: 450px;
-    background-color: #8c898a8b;
+    /* background-color: #a19fa0; */
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
-.login-img {
-    background-image: url("./images/banner-01.jpg");
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 300px;
-    height: 450px;
-}
-
 .logincontent form h1 {
     text-align: center;
 }
@@ -306,15 +311,15 @@ h2 {
     display: block;
     color: white;
     padding: 5px;
-    margin: 0 50px;
+    margin: 0 30px;
     font-size: 22px;
 }
 
 .logincontent input {
-    width: 200px;
+    width: 300px;
     padding: 8px;
     border: none;
-    margin: 10px 50px;
+    margin: 10px 30px;
     background: transparent;
     font-size: 16px;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -333,9 +338,9 @@ h2 {
 
 .logincontent button {
     display: block;
-    margin: 50px;
+    margin: 40px 0 0 30px;
     padding: 10px;
-    width: 220px;
+    width: 320px;
     border: none;
     color: white;
     cursor: pointer;
@@ -347,14 +352,13 @@ h2 {
 .offers {
     width: 100%;
     height: 15em;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
-    gap: 15px
+    gap: 15px;
+    width: 100%;
 }
 
 .container .items {
@@ -364,20 +368,21 @@ h2 {
     width: 450px;
     height: 150px;
     background-color: #f8f9fa;
-    box-shadow: 2px 10px 25px 2px rgba(140, 147, 152, 0.623);
+    box-shadow: 2px 5px 15px 2px rgba(140, 147, 152, 0.4);
 }
 
 .items i {
-    margin-top: 15%;
+    margin: 15% 0;
 }
 
 .items .content {
     margin-top: 10px;
-    width: 200px;
+    width: 240px;
 }
 
 .content h4:last-child {
-    color: rgb(140, 147, 152)
+    color: rgb(140, 147, 152, 0.5);
+    font-size: 18px;
 }
 
 
@@ -493,7 +498,7 @@ h2 {
 
 .display-prod .search {
     width: 350px;
-    height: 65vh;
+    height: 100vh;
     margin-top: 50px;
     /* background-color: #11a6fc; */
 }
@@ -520,10 +525,10 @@ h2 {
 }
 
 .display-prod .product-info {
-    min-width: 55%;
-    width: 60%;
-    height: 100vh;
-    margin-top: 60px;
+    min-width: 75%;
+    width: 75%;
+    height: auto;
+    margin: 50px 0 0 20px;
     display: flex;
     flex-wrap: wrap;
     /* background-color: #ff6674; */
@@ -591,9 +596,18 @@ h2 {
     height: 300px;
     margin: 0;
 }
-.container{
+
+.para p {
+    font-size: 1em;
+    line-height: 1.8em;
+    font-family: Lato, sans-serif;
+    color: #959499;
+}
+
+.container-03 {
     width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+
 /* search box */
