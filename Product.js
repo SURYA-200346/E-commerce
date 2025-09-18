@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
            
             const product = data.find(item => 
                 item.id === selectedId || 
-                item.name.toLowerCase().replace(/\s+/g, '-') === selectedId
+                item.name.toLowerCase()=== selectedId
             );
             const cardcontainer = document.getElementById("cardimage");
             cardcontainer.innerHTML = "";
