@@ -1,3 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  #020024;
+    background:  linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +59,11 @@ body {
     position: absolute;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.menu {
+    display: none;
 }
 
 .banner {
@@ -99,13 +123,6 @@ body {
     color: white;
 }
 
-.details .btn {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-}
-
 .btn :first-child {
     background-color: white;
     text-decoration: none;
@@ -114,6 +131,7 @@ body {
     text-align: center;
     font-size: 12px;
     padding: 10px;
+    margin: 0 10px;
 }
 
 .btn :last-child {
@@ -286,7 +304,7 @@ body {
 .logincontent::before {
     content: "";
     position: absolute;
-    background-color: #696c6ca9;
+    background-color: #696c6c5a;
     width: 400px;
     height: 450px;
 }
@@ -693,7 +711,7 @@ body {
     grid-template-rows: minmax(320px, auto);
     gap: 15px;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -701,18 +719,21 @@ body {
     position: relative;
     background: url('images/casual-shoes.jpg') center/cover;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 .gridcontainer .img2 {
     position: relative;
     background: url('images/formal-shoes.jpg') center/cover;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 .gridcontainer .img3 {
     position: relative;
     background: url('images/sports-shoe1.jpg') center/cover;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 .shoebtn span {
@@ -729,7 +750,31 @@ body {
     font-size: 18px;
 }
 
-.img1::before {
+.img1 .title {
+    font-size: 1.5em;
+    position: absolute;
+    /* top:50%;
+    left: 50%; */
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.img1:hover {
+    transform: scale(0.9) rotate(-5deg);
+    cursor: pointer;
+}
+
+.img2:hover {
+    transform: scale(0.9) rotate(-5deg);
+    cursor: pointer;
+}
+
+.img3:hover {
+    transform: scale(0.9) rotate(-5deg);
+    cursor: pointer;
+}
+
+/* .img1::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -745,4 +790,4 @@ body {
 
 .img1:hover:before {
     opacity: 0.6;
-}
+} */

@@ -1,7 +1,23 @@
 @media (max-width:768px) {
-.navbar{
-    height: 600px;
-}
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 40%;
+        right: 3%;
+        font-size: 1.6em;
+        color: white;
+    }
+
+    .logo h2 {
+        font-size: 40px;
+        color: white;
+    }
+
     .links {
         display: flex;
         flex-wrap: wrap;
@@ -19,7 +35,7 @@
         bottom: 0;
         right: 0;
         position: absolute;
-        display: flex;
+        display: none;
         flex-direction: column;
     }
 
@@ -33,7 +49,7 @@
     }
 
     .details {
-        width: 350px;
+        width: 300px;
         position: absolute;
         top: 35%;
         left: 2%;
@@ -42,25 +58,30 @@
 
     .details h4 {
         color: white;
-        font-weight: 100;
-        margin: 0;
+        font-style: italic;
+        font-size: 0.7em;
+        margin: 5px;
     }
 
     .details h2 {
         color: white;
-        font-size: 25px;
-        margin: 5px 0;
+        font-size: 18px;
+        margin: 5px 5px;
         font-family: "Source Sans Pro", sans-serif;
+        font-style: italic;
     }
 
     .offers {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
         height: auto;
         /* display: flex; */
         /* justify-content: space-evenly; */
     }
 
     .container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -71,11 +92,16 @@
     .container .items {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 2%;
-        width: 320px;
+        gap: 10px;
+        margin: 0.5em;
+        min-width: 300px;
         height: 150px;
         background-color: #f8f9fa;
         box-shadow: 2px 10px 20px 2px rgba(140, 147, 152, 0.623);
+    }
+
+    .items .content h4 {
+        font-size: 18px;
     }
 
     #new-arrival {
@@ -86,11 +112,33 @@
     }
 
     .container-02 .shoes {
-        width: 320px;
-        height: 450px;
+        min-width: 250px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         box-sizing: border-box;
-        border: 1px solid gainsboro;
+        border: 1px solid rgb(211, 211, 211);
         background-color: white;
+    }
+
+    .shoes img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .shoes .names {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price {
+        max-width: 210px;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .container-02 h1 {
