@@ -8,18 +8,17 @@ window.addEventListener("DOMContentLoaded", function () {
     })
         .then(res => res.json())
         .then(data => {
-           
-            const product = data.find(item => 
-                item.id === selectedId || 
-                item.name.toLowerCase()=== selectedId
+
+            const product = data.find(item =>
+                item.id.toString() === selectedId ||
+                item.name && item.name.toLowerCase().replace(/\s+/g, '-') === selectedId
             );
             const cardcontainer = document.getElementById("cardimage");
             cardcontainer.innerHTML = "";
             if (product) {
                 cardcontainer.innerHTML = `
                     <div class="productshow" id="displayproduct">
-                        <img src="${product.image}" alt="${product.name}" />
-                       
+                        <img src="${product.image}" alt="${product.name}" />  
                     </div>
                 `;
             } else {
