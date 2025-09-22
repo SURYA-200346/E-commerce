@@ -1,7 +1,7 @@
-
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -53,39 +53,42 @@ body {
 
 .details {
     width: 700px;
+    display: flex;
+    flex-flow: column;
     position: absolute;
     top: 40%;
-    right: 0.5%;
+    right: 5%;
     text-transform: uppercase;
 }
 
-.details h4,
-h2 {
+.details h4:first-child {
     animation: focus-in-contract-bck 1s cubic-bezier(.25, .46, .45, .94) both
 }
 
+.details h2:nth-child(2) {
+    animation: focus-in-contract-bck 1s cubic-bezier(.25, .46, .45, .94) both
+}
 
 @keyframes focus-in-contract-bck {
     0% {
-        letter-spacing: 1em;
+        letter-spacing: 0.5em;
         transform: translateZ(300px);
         filter: blur(12px);
-        opacity: 0
+        opacity: 0;
+        transition-duration: 1s;
     }
 
     100% {
-        transform: translateZ(12px);
-        filter: blur(0);
-        opacity: 1
+        transform: translateY(-12px);
     }
 }
 
 
 .details h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: white;
-    margin: 0;
+    margin: 10px;
 }
 
 .details h2 {
@@ -617,7 +620,8 @@ h2 {
 }
 
 .para {
-    min-width: 90%;
+    min-width: 76%;
+    width: 750px;
     height: 300px;
     margin-left: 20px;
 }
@@ -654,21 +658,31 @@ h2 {
     position: absolute;
     width: 100%;
     height: 500px;
-    background-color: #71727388;
+    background-color: #000b0c61;
 }
 
 .menspage div {
     position: absolute;
-    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 35px;
+}
+
+.menspage .menshead h1 {
+    color: white;
+    font-size: 4em;
+    font-style: italic;
+}
+
+.menshead h1 span {
+    color: red;
+    font-size: 2em;
 }
 
 .mens-shoes {
     width: 100%;
     height: 100vh;
+    margin-top: 20px;
     /* background-color: aqua; */
 
 }
@@ -676,29 +690,41 @@ h2 {
 .mens-shoes .gridcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: minmax(350px, auto);
+    grid-template-rows: minmax(300px, auto);
     gap: 15px;
     width: 80%;
-    margin:auto;
+    margin: auto;
     padding: 10px;
 }
 
 .gridcontainer .img1 {
     position: relative;
-    background: url('images/s1.jpg') center/cover;
-    /* background-attachment: fixed; */
+    background: url('images/casual-shoes.jpg') center/cover;
     border-radius: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.68);
 }
 
 .gridcontainer .img2 {
-    background: url('images/productimg-01.jpg') center/cover;
+    position: relative;
+    background: url('images/formal-shoes.jpg') center/cover;
     border-radius: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.68);
 }
 
 .gridcontainer .img3 {
-    background: url('images/banner-02.jpg') center/cover;
+    position: relative;
+    background: url('images/sports-shoe1.jpg') center/cover;
     border-radius: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+.shoebtn span {
+    background: linear-gradient(to bottom, #11a6fc, #11a6fc);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
 }
