@@ -1,32 +1,32 @@
-@media (max-width:768px) {
+@media (max-width:767px) {
     .navbar {
+        width: 100%;
+        height: 80px;
         display: flex;
-        justify-content: space-between;
-    }
-    .menu {
-        display: block;
-        position: absolute;
-        top: 40%;
-        right: 3%;
-        font-size: 1.6em;
-        color: white;
     }
 
+    /* .menu {
+        display: block;
+        position: absolute;
+        top: 8%;
+        right: 3%;
+        font-size: 1.6em;
+        color: rgb(248, 245, 245);
+    } */
     .logo h2 {
-        font-size: 40px;
+        font-size: 30px;
         color: white;
     }
 
     .links {
-        display: flex;
+
         flex-wrap: wrap;
         list-style-type: none;
-        margin-top: 35px;
     }
 
     .lists {
+        display: flex;
         padding: 0;
-        display: none;
     }
 
     .btn01 {
@@ -40,8 +40,8 @@
 
     .banner {
         background-image: url("./images/banner-main.jpg");
-        max-width: 100%;
-        height: 95vh;
+        min-width: 100%;
+        height: 60vh;
         background-size: cover;
         background-position: center;
         position: relative;
@@ -84,23 +84,31 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+
         gap: 15px;
         margin-top: 20px;
     }
 
     .container .items {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
         margin: 0.5em;
         min-width: 300px;
+        width: 350px;
         height: 150px;
         background-color: #f8f9fa;
-        box-shadow: 2px 10px 20px 2px rgba(140, 147, 152, 0.623);
+        box-shadow: 2px 10px 20px 2px rgba(140, 147, 152, 0.296);
     }
 
     .items .content h4 {
-        font-size: 18px;
+        font-size: 1em;
+        margin: 0 10px 20px;
+    }
+
+    .items i {
+        margin-left: 5px;
     }
 
     #new-arrival {
@@ -171,7 +179,7 @@
         min-width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         /* justify-content: space-between; */
@@ -180,10 +188,12 @@
 
     .display-prod .search {
         min-width: 300px;
+        width: 320px;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
         margin: 0;
         /* margin-top: 50px; */
         /* background-color: #11a6fc; */
@@ -229,36 +239,38 @@
         right: 37px;
         top: 20px;
         padding: 16px;
-        width: 100px;
+        width: 80px;
+        text-align: center;
         text-transform: uppercase;
         background: #1e272e;
         color: #e2352f;
     }
 
     .para {
+        margin: 0 0 0 10px;
+        min-width: 300px;
         width: 350px;
         height: auto;
-        text-align: justify;
-        margin: 0;
     }
 
     .para h3 {
-        margin: 0 0 10px 20px;
-        font-size: 20px;
+        font-size: 1.3em;
     }
 
     .para p {
-        margin: 0 20px;
-        font-size: 1.1em;
-        line-height: 1.6em;
-        font-family: Lato, sans-serif;
+        /* margin: 4px; */
+        padding: 2px;
+        font-size: 1em;
+        line-height: 1.8em;
+        font-family: sans-serif;
         color: #959499;
+        text-align: left;
     }
 
-    .discripitions p {
-        font-size: 10px;
+    .information .discripitions :nth-child(2) {
+        font-size: 18px;
+        line-height: 2rem;
         color: #959499;
-        text-transform: capitalize;
     }
 
     .product-info .productshow {
@@ -271,4 +283,58 @@
         width: 310px;
         height: auto;
     }
+
+    /* mens page */
+
+    .menspage {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+        height: 60vh;
+        background: url('images/mens-bannerimg01.jpg') no-repeat center/cover;
+        position: relative;
+    }
+
+    .menspage div {
+        position: absolute;
+        width: 100%;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+
+    .menspage .menshead h1 {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    .menshead h1 span {
+        color: red;
+        font-size: 2.5em;
+    }
+
+    .mens-shoes {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20px;
+        /* background-color: aqua; */
+
+    }
+
+    .mens-shoes .gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+        gap: 15px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
 }

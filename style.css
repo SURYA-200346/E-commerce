@@ -64,6 +64,9 @@ body {
 
 .menu {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
 .banner {
@@ -556,7 +559,7 @@ body {
 .display-prod .product-info {
     min-width: 85%;
     height: 750px;
-    margin: 50px 0;
+    margin: 50px 20px;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
@@ -565,7 +568,7 @@ body {
 
 .product-info .productshow {
     min-width: 320px;
-    height: 340px;
+    height: auto;
     border: 1px solid #bbb9b9;
     /* background-color:aqua; */
     /* margin: 0 10px; */
@@ -578,7 +581,7 @@ body {
 
 .product-info img {
     width: 320px;
-    height: 339px;
+    height: auto;
 }
 
 .product-info .information {
@@ -638,13 +641,11 @@ body {
 .para {
     width: 80%;
     height: 300px;
-    margin-left: 20px;
 }
 
 .para p {
     font-size: 1.2em;
-    line-height: 1.5em;
-    font-family: Lato, sans-serif;
+    line-height: 1.6em;
     color: #959499;
 }
 

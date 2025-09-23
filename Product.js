@@ -8,7 +8,6 @@ window.addEventListener("DOMContentLoaded", function () {
     })
         .then(res => res.json())
         .then(data => {
-
             const product = data.find(item =>
                 item.id.toString() === selectedId ||
                 item.name && item.name.toLowerCase().replace(/\s+/g, '-') === selectedId

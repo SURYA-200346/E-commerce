@@ -115,8 +115,22 @@ document.getElementById("signupbtn").addEventListener("click", (event) => {
 
 })
 
+// product display page
 document.querySelectorAll('.product-link').forEach(link => {
     link.addEventListener('click', function () {
         localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
     });
 });
+
+// menu tab
+const menuTab = document.getElementById("menutab");
+const mobileMenu = document.getElementById("mobilemenu");
+menuTab.addEventListener("click", () => {
+    // Toggle the menu's visibility
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
+});
+
