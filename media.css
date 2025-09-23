@@ -155,6 +155,120 @@
         text-transform: uppercase;
     }
 
+    /* sign up */
+    .signupcontent .heading span {
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    #signupbtn {
+        padding: 8px;
+        margin: 10px 0 0 10px;
+        width: 280px;
+        background-color: #11a6fc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .signupcontent form {
+        width: 300px;
+        height: 450px;
+        position: relative;
+    }
+
+    .signupcontent {
+        margin: 200px auto;
+        background-image: url("./images/signup-img.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        border-radius: 10px;
+        /* justify-content: center; */
+    }
+
+    .signupcontent input {
+        width: 200px;
+        padding: 8px;
+        border: none;
+        margin: 10px 50px;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .signupcontent::before {
+        content: "";
+        position: absolute;
+        background-color: #696c6ca9;
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+    }
+
+    /* login page */
+    .logincontent {
+        background-image: url(images/banner-01.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin: 200px auto;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .heading {
+        position: relative;
+    }
+
+    .logincontent .heading span {
+        color: white;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .logincontent::before {
+        content: "";
+        position: absolute;
+        background-color: #a8b3b35b;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .logincontent input {
+        width: 280px;
+        padding: 8px;
+        border: none;
+        margin: 10px 30px;
+        background: transparent;
+        font-size: 16px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .logincontent button {
+        display: block;
+        margin: 40px 0 0 30px;
+        padding: 10px;
+        width: 280px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #11a6fc;
+        border-radius: 10px;
+    }
+
     /* productdisplay page */
     .header {
         background-image: url("./images/productimg-01.jpg");
@@ -329,12 +443,9 @@
 
     .mens-shoes .gridcontainer {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        grid-auto-rows: minmax(200px, auto);
-        gap: 15px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
     }
 
 }
