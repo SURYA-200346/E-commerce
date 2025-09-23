@@ -554,23 +554,21 @@ body {
 }
 
 .display-prod .product-info {
-    min-width: 75%;
-    width: 75%;
+    min-width: 85%;
     height: 750px;
-    margin: 50px 0 0 20px;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* background-color: #ff6674; */
 }
 
 .product-info .productshow {
-    width: 320px;
+    min-width: 320px;
     height: 340px;
     border: 1px solid #bbb9b9;
     /* background-color:aqua; */
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 .product-link {
@@ -586,7 +584,7 @@ body {
 .product-info .information {
     margin: 0 0 0 20px;
     box-sizing: border-box;
-    width: 400px;
+    width: 500px;
 }
 
 .information :first-child {
@@ -623,7 +621,7 @@ body {
 
 .formemail form button {
     position: absolute;
-    right: 75px;
+    right: 200px;
     top: 20px;
     padding: 15px;
     width: 100px;
@@ -638,15 +636,14 @@ body {
 }
 
 .para {
-    min-width: 76%;
-    width: 750px;
+    width: 80%;
     height: 300px;
     margin-left: 20px;
 }
 
 .para p {
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 1.2em;
+    line-height: 1.5em;
     font-family: Lato, sans-serif;
     color: #959499;
 }
