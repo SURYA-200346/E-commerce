@@ -1,18 +1,21 @@
 @media (max-width:768px) {
-    .navbar {
-        max-width: 60%;
-        height: 100vh;
+    /* .navbar {
+
         display: none;
-        background-color: #1e272e;
-    }
+
+    } */
 
     #mobilemenu {
         display: none;
+        
     }
 
     #mobilemenu.active {
         display: block;
         position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: #1e272e;
     }
 
     .menu {
@@ -437,7 +440,7 @@
 
     /* mens page */
 
-    .menspage {
+    #menspage {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;

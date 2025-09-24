@@ -132,8 +132,9 @@ menuTab.addEventListener("click", (e) => {
 
 // login &sign btn 
 Loginbtn.addEventListener("click", () => {
-    mobileMenu.style.display = "none"
-})
+    mobileMenu.classList.toggle("active");
+});
+
 signbtn.addEventListener("click", () => {
-    mobileMenu.style.display = "none"
-})
+    mobileMenu.classList.remove("active");
+});
