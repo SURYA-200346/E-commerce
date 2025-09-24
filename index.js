@@ -125,12 +125,8 @@ document.querySelectorAll('.product-link').forEach(link => {
 // menu tab
 const menuTab = document.getElementById("menutab");
 const mobileMenu = document.getElementById("mobilemenu");
-menuTab.addEventListener("click", () => {
-    // Toggle the menu's visibility
-    if (mobileMenu.style.display === "block") {
-        mobileMenu.style.display = "none";
-    } else {
-        mobileMenu.style.display = "block";
-    }
+menuTab.addEventListener("click", (e) => {
+    e.preventDefault();
+    mobileMenu.classList.toggle("active");
 });
 
