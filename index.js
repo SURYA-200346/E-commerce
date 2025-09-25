@@ -1,16 +1,15 @@
 
-
 const Loginbtn = document.getElementById("Loginbtn");
 const signbtn = document.getElementById("signbtn");
 const logincontainer = document.querySelector(".login-container");
-const close = document.getElementById("close");
+const closebtn = document.getElementById("closebtn");
 const success = document.getElementById("success");
 const signupcontainer = document.getElementById("signupcontainer")
 
 Loginbtn.addEventListener("click", () => {
     logincontainer.style.display = "block";
 })
-close.addEventListener("click", () => {
+closebtn.addEventListener("click", () => {
     logincontainer.style.display = "none";
 
 })
@@ -138,3 +137,8 @@ Loginbtn.addEventListener("click", () => {
 signbtn.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
 });
+
+
+
+
+
