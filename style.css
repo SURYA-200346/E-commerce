@@ -695,46 +695,48 @@ body {
     font-size: 2em;
 }
 
-.mens-shoes {
+.mens-shoes{
     width: 100%;
-    height: 100vh;
+    height:auto;
     margin-top: 20px;
     /* background-color: aqua; */
 
 }
 
-.mens-shoes .gridcontainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(320px, auto);
+.mens-shoes .mensconatiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     width: 100%;
-    margin: 0 auto;
+    height: auto;
     padding: 10px;
 }
 
-.gridcontainer .img1 {
+.menscard {
+    width: 400px;
     position: relative;
-    background: url('images/casual-shoes.jpg') center/cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+    height: 250px;
+    background-image: url('images/casual-shoes.jpg');
+    background-size: cover;
 }
 
-.gridcontainer .img2 {
-    position: relative;
-    background: url('images/formal-shoes.jpg') center/cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+.mensconatiner :nth-child(2) {
+    width: 400px;
+    height: 250px;
+    background-image: url('images/formal-shoes.jpg');
+    background-size: cover;
 }
 
-.gridcontainer .img3 {
-    position: relative;
-    background: url('images/sports-shoe1.jpg') center/cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+.mensconatiner :nth-child(3) {
+    width: 400px;
+    height: 250px;
+    background-image: url('images/sports-shoe1.jpg');
+    background-size: cover;
 }
 
-.shoebtn span {
+.shoebtn a
+{
     background: linear-gradient(to bottom, #11a6fc, #11a6fc);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
     display: inline-flex;
@@ -746,30 +748,6 @@ body {
     bottom: 10px;
     right: 10px;
     font-size: 18px;
-}
-
-.img1 .title {
-    font-size: 1.5em;
-    position: absolute;
-    /* top:50%;
-    left: 50%; */
-    margin: 0;
-    transform: translate(-50%, -50%);
-}
-
-.img1:hover {
-    transform: scale(0.9) rotate(3deg);
-    cursor: pointer;
-}
-
-.img2:hover {
-    transform: scale(0.9) rotate(-5deg);
-    cursor: pointer;
-}
-
-.img3:hover {
-    transform: scale(0.9) rotate(3deg);
-    cursor: pointer;
 }
 
 /* .img1::before {
