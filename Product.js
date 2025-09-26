@@ -38,7 +38,6 @@ window.addEventListener("DOMContentLoaded", () => {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const mensProducts = data.filter(item => item.category === "mens casual");
             cards.innerHTML = "";
             if (mensProducts.length === 0) {
