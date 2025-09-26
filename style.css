@@ -762,7 +762,7 @@ body {
 }
 
 .shoes-cards #cards {
-    width: 55%;
+    width: 60%;
     height: auto;
     /* background-color: #606782; */
     display: flex;
@@ -773,8 +773,8 @@ body {
 .shoes-cards .card {
     margin: 10px;
     padding: 10px;
-    min-width: 250px;
-    height: 300px;
+    min-width: 300px;
+    height: auto;
     background-color: rgb(246, 246, 246);
     transition: transform 0.3s;
 }
@@ -785,5 +785,5 @@ body {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 300px;
 }

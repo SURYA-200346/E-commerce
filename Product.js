@@ -30,6 +30,7 @@ window.addEventListener("DOMContentLoaded", function () {
 // mens product page
 const mensCasual = document.getElementById("menscasual");
 const cards = document.getElementById("cards");
+const card = document.querySelector("card");
 
 window.addEventListener("DOMContentLoaded", () => {
     fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name", {
@@ -58,3 +59,15 @@ window.addEventListener("DOMContentLoaded", () => {
             cards.innerHTML = "<p>Could not load products.</p>";
         });
 });
+
+
+mensCasual.addEventListener("click", () => {
+    cards.style.display = "none"
+
+    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name",{
+        method:"GET",
+        headers:{"content-type":"application/json"},
+    })
+    .then(res=>res.json())
+    
+})

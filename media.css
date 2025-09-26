@@ -357,7 +357,7 @@
         padding: 10px;
         font-size: 20px;
         position: absolute;
-        left:0;
+        left: 0;
         margin: 0;
     }
 
@@ -440,7 +440,6 @@
     #menspage {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
         gap: 10px;
         max-width: 100%;
         width: 100%;
@@ -471,22 +470,26 @@
 
     .mensconatiner {
         display: flex;
+        flex-wrap: wrap;
         /* justify-content: flex-start; */
-        flex-direction: row;
-        overflow-x: scroll;
-        width: 100%;
+        width: 60%;
         height: 100vh;
         margin-top: 20px;
-        /* background-color: aqua; */
+        background-color: aqua;
 
     }
 
     .menscard {
-        width: 350px;
+        max-width: 300px;
+        border-radius: 10px;
         position: relative;
         height: 250px;
         background-image: url('images/casual-shoes.jpg');
         background-size: cover;
+        transition: all 0.3s;
+    }
+    .menscard:hover {
+        transform: translateY(-10px);
     }
 
     .mensconatiner :nth-child(2) {
