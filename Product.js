@@ -82,6 +82,7 @@ mensCasual.addEventListener("click", () => {
                     <img src="${product.productimage}" alt="${product.name}" />
                     <h3>${product.name}</h3>   
                     <p>${product.price}</p> 
+                  <a href=""><i class="fa-solid fa-plus"></i></a>
                 `;
                 cards.appendChild(card);
             });
