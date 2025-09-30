@@ -62,12 +62,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 mensCasual.addEventListener("click", () => {
-    cards.style.display = "none"
+    // cards.style.display = "none"
 
-    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name",{
-        method:"GET",
-        headers:{"content-type":"application/json"},
+    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name", {
+        method: "GET",
+        headers: { "content-type": "application/json" },
     })
-    .then(res=>res.json())
-    
-})
+        .then(res => res.json())
+        .then(data => {
+            const mensProducts = data.filter(item => item.category === "mens casual");
+            cards.innerHTML = "";
+            if (mensProducts.length === 0) {
+                cards.innerHTML = "<p>No mens casual products found.</p>";
+            }
+            mensProducts.forEach(product => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `
+                    <img src="${product.productimage}" alt="${product.name}" />
+                    <h3>${product.name}</h3>   
+                    <p>${product.price}</p> 
+                `;
+                cards.appendChild(card);
+            });
+        });
+});
