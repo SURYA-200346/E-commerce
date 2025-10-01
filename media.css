@@ -315,7 +315,7 @@
     /* productdisplay page */
     .header {
         background-image: url("./images/productimg-01.jpg");
-        height: 300px;
+        height: 250px;
         background-position: center;
         background-size: cover;
         position: relative;
@@ -381,8 +381,9 @@
     .product-info .information {
         margin: 100px 0 0 20px;
         box-sizing: border-box;
-        width: 400px;
+        width: 350px;
         height: auto;
+        /* background-color: #11a6fc; */
     }
 
     .formemail form button {
@@ -424,15 +425,17 @@
     }
 
     .product-info .productshow {
-        width:100%;
+        width: 300px;
         height: auto;
+        margin: 0;
         border: 1px solid #bbb9b9;
     }
 
     .product-info img {
-        width:100%;
+        width: 100%;
         height: auto;
     }
+
     /* mens page */
 
     #menspage {
