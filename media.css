@@ -379,7 +379,7 @@
     }
 
     .product-info .information {
-        margin: 0 0 0 20px;
+        margin: 100px 0 0 20px;
         box-sizing: border-box;
         width: 400px;
         height: auto;
@@ -424,16 +424,15 @@
     }
 
     .product-info .productshow {
-        width: 300px;
+        width:100%;
         height: auto;
         border: 1px solid #bbb9b9;
     }
 
     .product-info img {
-        width: 310px;
+        width:100%;
         height: auto;
     }
-
     /* mens page */
 
     #menspage {
@@ -516,12 +515,11 @@
     .shoes-cards .card {
         max-width: 170px;
         height: auto;
-        height: auto;
     }
 
     .card img {
-        width: 150px;
-        height: 160px;
+        /* width: 150px;
+        height: 160px; */
         border-radius: 10px;
     }
 }

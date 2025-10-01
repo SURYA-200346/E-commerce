@@ -567,11 +567,9 @@ body {
 }
 
 .product-info .productshow {
-    min-width: 320px;
-    height: auto;
+    width: 300px;
+    height: 310px;
     border: 1px solid #bbb9b9;
-    /* background-color:aqua; */
-    /* margin: 0 10px; */
 }
 
 .product-link {
@@ -580,14 +578,15 @@ body {
 }
 
 .product-info img {
-    width: 320px;
-    height: auto;
+    width: 100%;
+    height: 300px;
 }
 
 .product-info .information {
     margin: 0 0 0 20px;
     box-sizing: border-box;
     width: 500px;
+    /* background-color: #11a6fc; */
 }
 
 .information :first-child {
@@ -768,7 +767,7 @@ body {
 }
 
 .shoes-cards #cards {
-    max-width: 70%;
+    max-width: 65%;
     height: auto;
     /* background-color: #606782; */
     display: flex;
@@ -784,7 +783,7 @@ body {
     height: auto;
     border-radius: 10px;
     height: auto;
-    background-color: rgba(217, 211, 211, 0.272);
+    background-color: rgba(176, 175, 175, 0.2);
     transition: transform 0.3s;
 }
 
@@ -792,18 +791,18 @@ body {
     transform: scale(1.05);
 }
 
-.card img{
-    width: 100%;
-    height: 280px;
+.card img {
+    width: 220px;
+    height: 250px;
     border-radius: 10px;
 }
 
-.card i{
+.card i {
     color: white;
     position: absolute;
     border-radius: 50%;
-    padding:3px;
-    top:85%;
+    padding: 3px;
+    top: 85%;
     right: 20px;
     background-color: rgba(4, 177, 230, 0.821);
 }
