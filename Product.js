@@ -1,8 +1,10 @@
+const Api = "https://68a582352a3deed2960dbd2c.mockapi.io/form/name";
+
 window.addEventListener("DOMContentLoaded", function () {
     const selectedId = localStorage.getItem('selectedProduct');
     if (!selectedId) return;
 
-    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name", {
+    fetch(Api, {
         method: "GET",
         headers: { "content-type": "application/json" },
     })
@@ -28,12 +30,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 // mens product page
+
 const mensCasual = document.getElementById("menscasual");
 const cards = document.getElementById("cards");
 const card = document.querySelector("card");
 
 window.addEventListener("DOMContentLoaded", () => {
-    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name", {
+    fetch(Api, {
         method: "GET",
         headers: { "content-type": "application/json" }
     })
@@ -64,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
 mensCasual.addEventListener("click", () => {
     // cards.style.display = "none"
 
-    fetch("https://68a582352a3deed2960dbd2c.mockapi.io/form/name", {
+    fetch(Api, {
         method: "GET",
         headers: { "content-type": "application/json" },
     })
@@ -79,7 +82,7 @@ mensCasual.addEventListener("click", () => {
                 const card = document.createElement("div");
                 card.className = "card";
                 card.innerHTML = `
-                    <img src="${product.productimage}" alt="${product.name}" />
+                 <a href="Productdisplay.html"><img src="${product.productimage}" alt="${product.name}" /></a>
                     <h3>${product.name}</h3>   
                     <p>${product.price}</p> 
                   <a href="" title="Added to Cart"><i class="fa-solid fa-plus"></i></a>

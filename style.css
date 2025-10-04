@@ -772,14 +772,14 @@ body {
     /* background-color: #606782; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 .shoes-cards .card {
     position: relative;
     margin: 10px;
     padding: 10px;
-    max-width: 280px;
+   width: 250px;
     height: auto;
     border-radius: 10px;
     height: auto;
@@ -792,7 +792,7 @@ body {
 }
 
 .card img {
-    width: 220px;
+    width:100%;
     height: 250px;
     border-radius: 10px;
 }
@@ -805,4 +805,18 @@ body {
     top: 85%;
     right: 20px;
     background-color: rgba(4, 177, 230, 0.821);
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #11a6fc;
+}
+.footer .footerdetails{
+    width: 50%;
+    height:auto;
+    background-color: #e2352f;
 }

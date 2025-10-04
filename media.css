@@ -142,22 +142,20 @@
         margin-top: 15px;
         max-width: 100%;
         display: flex;
-        justify-content: center;
     }
 
     .container-02 .shoes {
-        min-width: 250px;
+        max-width: 250px;
         height: 350px;
         display: flex;
         flex-direction: column;
-        align-content: center;
         box-sizing: border-box;
         border: 1px solid rgb(211, 211, 211);
         background-color: white;
     }
 
     .shoes img {
-        width: 250px;
+        max-width: 250px;
         height: 200px;
     }
 
@@ -472,15 +470,13 @@
     .mensconatiner {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: flex-start; */
         width: 60%;
         height: 100vh;
         margin-top: 20px;
-
     }
 
     .menscard {
-        max-width: 300px;
+        max-width:300px;
         border-radius: 10px;
         position: relative;
         height: 250px;
@@ -516,7 +512,7 @@
     }
 
     .shoes-cards .card {
-        max-width: 170px;
+        width: 170px;
         height: auto;
     }
 
