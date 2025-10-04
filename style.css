@@ -811,11 +811,18 @@ body {
 
 .footer{
     display: flex;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
     height: 300px;
     background-color: #11a6fc;
 }
 .footer .footerdetails{
+    width: 40%;
+    height:auto;
+    background-color: #e2352f;
+}
+.footer .contact-info{
     width: 50%;
     height:auto;
     background-color: #e2352f;

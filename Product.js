@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
             if (product) {
                 cardcontainer.innerHTML = `
                     <div class="productshow" id="displayproduct">
-                        <img src="${product.productimage}" alt="${product.name}" />  
+                        <img src="${product.    image}" alt="${product.name}" />  
                     </div>
                 `;
             } else {
