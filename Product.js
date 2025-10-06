@@ -90,5 +90,6 @@ mensCasual.addEventListener("click", () => {
                 cards.appendChild(card);
             });
         });
+       
 });
 

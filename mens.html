@@ -22,21 +22,69 @@
          <div class="lists">
             <ul class="links">
                <li> <a href="index.html" class="active">Home</a></li>
-               <li> <a href="#">Mens</a></li>
+               <li> <a href="mens.html">Mens</a></li>
                <li> <a href="#">Womens</a></li>
                <li> <a href="#">Kids</a></li>
                <li> <a href="#">Contact</a></li>
                <li> <a href="#">About</a></li>
             </ul>
          </div>
+         <div class="btn01">
+            <button class="loginbtn" id="Loginbtn">Login</button>
+            <button class="loginbtn" id="signbtn">New User</button>
+            <a style="cursor: pointer;">
+               <i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i>
+            </a>
+         </div>
+
       </nav>
-      <a href="" class="menu" id="menutab"><i class="fa-solid fa-bars"></i></a>
-   </header>
-   <section class="menspage">
-      <div class="menshead">
-         <h1><span>M</span>ens Collections</h1>
+
+      <div class="mensbanner">
+         <div class="menshead">
+            <h1><span>M</span>ens Collections</h1>
+         </div>
       </div>
-   </section>
+      <div class="login-container" style="display: none; position: fixed; z-index: 10;">
+         <div class="logincontent">
+
+            <form action="#" id="loginform">
+               <div class="heading">
+                  <h1>Login </h1>
+                  <span id="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
+               </div>
+               <label for="username">Username:</label>
+               <input type="text" name="username" id="username" required autocomplete="off">
+               <label for="username">Password:</label>
+               <input type="password" name="password" id="password" required autocomplete="off">
+               <button id="login">LOGIN</button>
+               <div>
+                  <p id="success"></p>
+               </div>
+               <div>
+                  <p id="failed"></p>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="signup" style="display: none;  z-index: 10;" id="signupcontainer">
+         <div class="signupcontent">
+            <form action="#" id="signup">
+               <div class="heading">
+                  <h1>Sign Up </h1>
+                  <span id="closebtn"><i class="fa-solid fa-xmark" style="color: #090909;"></i></span>
+               </div>
+               <label for="name">Name:</label>
+               <input type="text" name="name" id="name" required autocomplete="off">
+               <label for="email">Email:</label>
+               <input type="text" name="email" id="email" required autocomplete="off">
+               <label for="newpassword">Create Password:</label>
+               <input type="password" name="newpassword" id="newpassword" required autocomplete="off">
+               <button id="signupbtn">SignUp</button>
+            </form>
+         </div>
+      </div>
+      <button class="menu" id="menutab"><i class="fa-solid fa-bars"></i></button>
+   </header>
    <section class="mens-shoes">
       <div class="mensconatiner">
          <div class="menscard">
@@ -46,7 +94,7 @@
          </div>
          <div class="menscard">
             <div class="shoebtn">
-               <a href="#" >Formal Mens Shoes</a>
+               <a href="#">Formal Mens Shoes</a>
             </div>
          </div>
          <div class="menscard">
@@ -63,6 +111,7 @@
       <div id="cards">
       </div>
    </section>
+   <script src="index.js"></script>
    <script src="Product.js"></script>
 </body>
 

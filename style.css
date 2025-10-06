@@ -67,6 +67,8 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    background: none;
+    border: none;
 }
 
 .banner {
