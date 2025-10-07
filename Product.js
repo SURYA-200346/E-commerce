@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
             if (product) {
                 cardcontainer.innerHTML = `
                     <div class="productshow" id="displayproduct">
-                        <img src="${product.    image}" alt="${product.name}" />  
+                        <img src="${product.image}" alt="${product.name}" />  
                     </div>
                 `;
             } else {
@@ -82,7 +82,7 @@ mensCasual.addEventListener("click", () => {
                 const card = document.createElement("div");
                 card.className = "card";
                 card.innerHTML = `
-                 <a href="Productdisplay.html"><img src="${product.productimage}" alt="${product.name}" /></a>
+                 <a href="Productdisplay.html"><img src="${product.productimage}" alt="${product.name}" id="casualshoes"></a>
                     <h3>${product.name}</h3>   
                     <p>${product.price}</p> 
                   <a href="" title="Added to Cart"><i class="fa-solid fa-plus"></i></a>
