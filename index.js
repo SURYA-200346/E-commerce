@@ -124,8 +124,8 @@ document.querySelectorAll('.product-link').forEach(link => {
 // menu tab
 const menuTab = document.getElementById("menutab");
 const mobileMenu = document.getElementById("mobilemenu");
-menuTab.addEventListener("click", (e) => {
-    e.preventDefault();
+menuTab.addEventListener("click", (event) => {
+    event.preventDefault();
     mobileMenu.classList.toggle("active");
 });
 
