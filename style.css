@@ -570,8 +570,8 @@ body {
 }
 
 .product-info .productshow {
-    width: 250px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #b9b9bb;
 }
 
@@ -582,7 +582,7 @@ body {
 
 .product-info img {
     width: 100%;
-    height: 300px;
+    height: 290px;
 }
 
 .product-info .information {
@@ -770,7 +770,7 @@ body {
 }
 
 .shoes-cards #cards {
-    max-width: 65%;
+    max-width: 70%;
     height: auto;
     /* background-color: #606782; */
     display: flex;

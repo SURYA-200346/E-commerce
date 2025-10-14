@@ -512,21 +512,20 @@
     }
 
     .shoes-cards #cards {
-        max-width: 100%;
+        min-width: 95%;
         height: auto;
-        /* background-color: #606782; */
         display: flex;
-        justify-content: center;
+        justify-content:center;
     }
 
     .shoes-cards .card {
-        width: 170px;
+        width: 150px;
         height: auto;
     }
 
     .card img {
-        width: 150px;
-        height: 160px;
+        width: 100%;
+        height: 130px;
         border-radius: 10px;
     }
 
@@ -537,6 +536,7 @@
         width: 100%;
         height: 80vh;
     }
+
     .cart .carthead {
         font-size: 1.4em;
     }
