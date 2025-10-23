@@ -34,6 +34,7 @@ window.addEventListener("DOMContentLoaded", function () {
 const mensCasual = document.getElementById("menscasual");
 const cards = document.getElementById("cards");
 const card = document.querySelector("card");
+const cart = document.getElementById("cart");
 
 window.addEventListener("DOMContentLoaded", () => {
     fetch(Api, {
@@ -85,11 +86,14 @@ mensCasual.addEventListener("click", () => {
                  <a href="Productdisplay.html"><img src="${product.productimage}" alt="${product.name}" id="casualshoes"></a>
                     <h3>${product.name}</h3>   
                     <p>${product.price}</p> 
-                  <a href="" title="Added to Cart"><i class="fa-solid fa-plus"></i></a>
+                  <a href="" title="Added to Cart" id="cart"><i class="fa-solid fa-plus"></i></a>
                 `;
                 cards.appendChild(card);
             });
         });
-       
+
 });
+cart.addEventListener("click", () => {
+    alert("Successfully added")
+})
 
