@@ -96,4 +96,5 @@ mensCasual.addEventListener("click", () => {
 cart.addEventListener("click", () => {
     alert("Successfully added")
 })
+// 
 

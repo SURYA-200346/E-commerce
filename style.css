@@ -72,12 +72,35 @@ body {
 }
 
 .banner {
-    background-image: url("./images/banner-main.jpg");
     min-width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
+    animation: slide 15s ease-in-out infinite;
+}
+.banner::before{
+    position: absolute;
+   
+    width: 100%;
+    height: 100vh;
+}
+@keyframes slide {
+    0% {
+        background-image: url("./images/banner-main.jpg");
+    }
+
+    33% {
+        background: url("https://images.unsplash.com/photo-1616406432452-07bc5938759d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIzfHxmb290d2VhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600") fixed center/cover;
+    }
+
+    66% {
+        background-image: url("https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170");
+    }
+
+    100% {
+        background-image: url("https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&q=80&w=1172");
+    }
 }
 
 .details {
@@ -662,11 +685,11 @@ body {
 .mensbanner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     gap: 10px;
     max-width: 100%;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background: url('images/mens-bannerimg01.jpg') no-repeat center/cover;
     position: relative;
 }
@@ -675,8 +698,8 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 70vh;
-    background-color: #000b0c61;
+    height: 50vh;
+    background-color: #2f2f2f5e;
 }
 
 .mensbanner div {
@@ -726,15 +749,22 @@ body {
     transition: all 0.2s;
 }
 
+/* .menscard::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 250px;
+} */
+
 .menscard:hover {
     transform: scale(1.05);
+    box-shadow: 5px 5px 15px 0 #41424374;
 }
 
 .mensconatiner :nth-child(2) {
     width: 400px;
-    height: 250px;
-    background-image: url('images/formal-shoes.jpg');
-    background-size: cover;
+    height: auto;
+    background: url('images/formal-shoes.jpg') no-repeat center/cover;
 }
 
 .mensconatiner :nth-child(3) {
@@ -745,17 +775,26 @@ body {
 }
 
 .shoebtn a {
-    background: linear-gradient(to bottom, #11a6fc, #11a6fc);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-    display: inline-flex;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    top: 80%;
+    right: 5px;
+    text-decoration: none;
+    background-color: #0349dfea;
+    padding: 10px;
     font-size: 18px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 180px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+.shoebtn a:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
 }
 
 .shoes-cards {
