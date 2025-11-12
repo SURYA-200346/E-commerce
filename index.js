@@ -121,7 +121,8 @@ document.querySelectorAll('.product-link').forEach(link => {
     });
 });
 
-// menu tab
+
+// menu tab 
 const menuTab = document.getElementById("menutab");
 const mobileMenu = document.getElementById("mobilemenu");
 menuTab.addEventListener("click", (event) => {

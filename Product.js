@@ -52,10 +52,16 @@ window.addEventListener("DOMContentLoaded", () => {
                 const card = document.createElement("div");
                 card.className = "card";
                 card.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}" />
-                    <h3>${product.name}</h3>    
+               <a href="Productdisplay.html" data-id="${(product.name || '').toLowerCase().replace(/\s+/g, '-')}" class="mensproduct"><img src="${product.image}" alt="${product.name}" /></a>
+                    <h3>${product.name}</h3> 
+                    <p>${product.price}</p>    
+                      <a href="" title="Added to Cart" id="cart"><i class="fa-solid fa-plus"></i></a>
                 `;
                 cards.appendChild(card);
+                card.querySelector('.mensproduct').addEventListener('click', function () {
+                    localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
+                });
+
             });
         })
         .catch(error => {
@@ -83,18 +89,24 @@ mensCasual.addEventListener("click", () => {
                 const card = document.createElement("div");
                 card.className = "card";
                 card.innerHTML = `
-                 <a href="Productdisplay.html"><img src="${product.productimage}" alt="${product.name}" id="casualshoes"></a>
-                    <h3>${product.name}</h3>   
-                    <p>${product.price}</p> 
-                  <a href="" title="Added to Cart" id="cart"><i class="fa-solid fa-plus"></i></a>
+                <a href="Productdisplay.html" data-id="${product.image}" class="casualshoes" ><img src="${product.productimage}" alt="${product.name}" id="casualshoes"></a>
+                <h3>${product.name}</h3>   
+                <p>${product.price}</p> 
+                <a href="" title="Added to Cart" id="cart"><i class="fa-solid fa-plus"></i></a>
                 `;
                 cards.appendChild(card);
+                card.querySelector('.casualshoes').addEventListener('click', () => {
+                    localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
+                });
             });
         });
 
 });
+
+
 cart.addEventListener("click", () => {
     alert("Successfully added")
 })
+
 // 
 
