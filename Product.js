@@ -1,6 +1,6 @@
 const Api = "https://68a582352a3deed2960dbd2c.mockapi.io/form/name";
 
-window.addEventListener("DOMContentLoaded", function () {
+function productdisplay() {
     const selectedId = localStorage.getItem('selectedProduct');
     if (!selectedId) return;
 
@@ -26,8 +26,8 @@ window.addEventListener("DOMContentLoaded", function () {
                 cardcontainer.innerHTML = "<p>Product not found.</p>";
             }
         });
-});
-
+};
+productdisplay()
 
 // mens product page
 
@@ -36,11 +36,12 @@ const cards = document.getElementById("cards");
 const card = document.querySelector("card");
 const cart = document.getElementById("cart");
 
-window.addEventListener("DOMContentLoaded", () => {
+function load() {
     fetch(Api, {
         method: "GET",
         headers: { "content-type": "application/json" }
     })
+
         .then(response => response.json())
         .then(data => {
             const mensProducts = data.filter(item => item.category === "mens casual");
@@ -68,12 +69,10 @@ window.addEventListener("DOMContentLoaded", () => {
             console.error("Fetch error:", error);
             cards.innerHTML = "<p>Could not load products.</p>";
         });
-});
-
+}
+load()
 
 mensCasual.addEventListener("click", () => {
-    // cards.style.display = "none"
-
     fetch(Api, {
         method: "GET",
         headers: { "content-type": "application/json" },
@@ -90,23 +89,19 @@ mensCasual.addEventListener("click", () => {
                 card.className = "card";
                 card.innerHTML = `
                 <a href="Productdisplay.html" data-id="${product.image}" class="casualshoes" ><img src="${product.productimage}" alt="${product.name}" id="casualshoes"></a>
-                <h3>${product.name}</h3>   
-                <p>${product.price}</p> 
+            <h3>${product.name}</h3>
+             <p>${product.price}</p>
                 <a href="" title="Added to Cart" id="cart"><i class="fa-solid fa-plus"></i></a>
                 `;
                 cards.appendChild(card);
-                card.querySelector('.casualshoes').addEventListener('click', () => {
-                    localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
-                });
+            });
+            card.querySelector('.casualshoes').addEventListener('click', () => {
+                localStorage.setItem('selectedProduct', this.getAttribute('data-id'));
+
             });
         });
-
-});
-
-
-cart.addEventListener("click", () => {
-    alert("Successfully added")
 })
+
 
 // 
 
