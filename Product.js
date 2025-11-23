@@ -103,5 +103,3 @@ mensCasual.addEventListener("click", () => {
 })
 
 
-// 
-
